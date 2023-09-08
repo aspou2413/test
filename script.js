@@ -1,7 +1,7 @@
 Latitude = getParam('a');
 Longitude = getParam('o');
 var mymap = L.map('mapid').setView([0, 0], 18);
-L.tileLayer('https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}', {
+L.tileLayer('http://114.148.57.151:8123/tiles/_marker_/world/flat/{x}_{y}/zzzzz_{x}_{y}.jpg?timestamp=1694191481784', {
   maxZoom: 19,
   attribution: "<a href='https://developers.google.com/maps/documentation' target='_blank'>Google Map</a>"
 }).addTo(mymap);
